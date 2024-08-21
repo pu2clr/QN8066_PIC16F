@@ -16,3 +16,42 @@ Contact: pu2clr@gmail.com.
 THIS PROJECT IS UNDER CONSTRUCTION...
 
 ![UNDER CONSTRUCTION...](./extra/images/under_construction.png)
+
+
+## QN8066 Functional Blocks
+
+![QN8066 Functional Blocks](./extra/images/BLOCK_DIA.png)
+
+
+1. RF Front-End: The RF front-end is designed to efficiently capture and process FM signals, ensuring minimal loss and high-quality signal reception.
+2. PLL Synthesizer: The phase-locked loop (PLL) synthesizer ensures stable frequency generation and accurate tuning.
+3. Audio Processing: Includes both analog and digital audio processing units to enhance sound quality and support various audio formats.
+4. Power Management: Advanced power management features optimize power consumption, making the QN8066 ideal for portable applications.
+
+### Attention
+
+The Logic signals level of the QN8066 device (CEN, SCL, SDA, to GND) works from 1.6V to 3.6V (see Datasheet, ELECTRICAL SPECIFICATIONS, section Recommended Operating Conditions). If you are using a 5V microcontroller board, it is possible you are sending  5V signals to the QN8066 device through the digital pins and the I2C bus. That configuration can make the system unstable or damage the QN8066 device. To fix this, use a logic shifter chip that converts between 3.3V and 5V logic.
+
+
+## QN8066 PINOUT
+
+![QN8066 PINOUT](./extra/images/QN8066_PINOUT.png)
+
+
+## PIC16F876A PINOUT 
+
+
+![PIC16F876A PINOUT](./extra/images/PIC16F876A_PINOUT.png)
+
+
+
+## KIT DIY QN8066 FM TRANSMITTER
+
+
+![KIT DIY QN8066 FM TRANSMITTER](./extra/images/KIT_ALIEXPRESS_01.jpg)
+
+
+
+
+## References
+
