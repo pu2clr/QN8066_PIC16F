@@ -14,7 +14,9 @@
 #ifndef _QN8066_H // Prevent this file from being compiled more than once
 #define _QN8066_H
 
-
+#ifndef _XTAL_FREQ
+#define _XTAL_FREQ 4000000  // Defina a frequência do oscilador
+#endif
 
 #define QN8066_I2C_ADDRESS 0x21   // See Datasheet pag. 16.
 #define QN8066_RESET_DELAY 1000   // Delay after reset in us
@@ -836,12 +838,20 @@ unsigned char rdsPTY = 5;       //!< The default program type (PTY) is 5, which 
 unsigned char rdsTP = 0;        //!< Traffic Program (TP)
 unsigned char rdsSendError = 0;
 
+
+void i2c_begin(int c, long pic_xtal);
+void i2c_start();
+void i2c_stop();
+void i2c_write(unsigned char data);
+unsigned char i2c_read(unsigned char);
+
 void set_register(unsigned char registerNumber, unsigned char value); 
 unsigned char get_register(unsigned char registerNumber);
 
 
 
-void qn8066_begin();      
+void qn8066_begin();  
+void qn8066_set_tx(unsigned int frequency);
 
 
 #endif // _QN8066_H

@@ -1,98 +1,98 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"91 ./QN8066.h
-[; ;./QN8066.h: 91:   struct {
+"93 ./QN8066.h
+[; ;./QN8066.h: 93:   struct {
 [s S92 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S92 . cca_ch_dis ccs_ch_dis chsc txreq rxreq stnby recal swrst ]
-"90
-[; ;./QN8066.h: 90: typedef union {
+"92
+[; ;./QN8066.h: 92: typedef union {
 [u S91 `S92 1 `uc 1 ]
 [n S91 . arg raw ]
-"114
-[; ;./QN8066.h: 114:   struct {
+"116
+[; ;./QN8066.h: 116:   struct {
 [s S94 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S94 . tc rdsrdy tx_mute rx_mute tx_mono force_mo tx_rdsen rx_rdsen ]
-"113
-[; ;./QN8066.h: 113: typedef union {
+"115
+[; ;./QN8066.h: 115: typedef union {
 [u S93 `S94 1 `uc 1 ]
 [n S93 . arg raw ]
-"640
-[; ;./QN8066.h: 640:   struct {
+"642
+[; ;./QN8066.h: 642:   struct {
 [s S133 :4 `uc 1 :2 `uc 1 :2 `uc 1 ]
 [n S133 . GAIN_TXPLT t1m_sel tx_sftclpth ]
-"639
-[; ;./QN8066.h: 639: typedef union {
+"641
+[; ;./QN8066.h: 641: typedef union {
 [u S132 `S133 1 `uc 1 ]
 [n S132 . arg raw ]
-"137
-[; ;./QN8066.h: 137:   struct {
+"139
+[; ;./QN8066.h: 139:   struct {
 [s S96 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S96 . SNR_CCA_TH imr xtal_inj ]
-"136
-[; ;./QN8066.h: 136: typedef union {
+"138
+[; ;./QN8066.h: 138: typedef union {
 [u S95 `S96 1 `uc 1 ]
 [n S95 . arg raw ]
-"582
-[; ;./QN8066.h: 582: typedef union {
+"584
+[; ;./QN8066.h: 584: typedef union {
 [u S129 `uc 1 `uc 1 ]
 [n S129 . TX_FDEV raw ]
-"445
-[; ;./QN8066.h: 445:   struct {
+"447
+[; ;./QN8066.h: 447:   struct {
 [s S121 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S121 . TXCH priv_mode rds_4k_mode s1k_en rds_only cca_int_en rds_int_en ]
-"444
-[; ;./QN8066.h: 444: typedef union {
+"446
+[; ;./QN8066.h: 446: typedef union {
 [u S120 `S121 1 `uc 1 ]
 [n S120 . arg raw ]
-"517
-[; ;./QN8066.h: 517: typedef union {
+"519
+[; ;./QN8066.h: 519: typedef union {
 [u S124 `uc 1 `uc 1 ]
 [n S124 . TXCH raw ]
-"219
-[; ;./QN8066.h: 219: typedef union {
+"221
+[; ;./QN8066.h: 221: typedef union {
 [u S103 `uc 1 `uc 1 ]
 [n S103 . xtal_div raw ]
-"235
-[; ;./QN8066.h: 235:   struct {
+"237
+[; ;./QN8066.h: 237:   struct {
 [s S105 :3 `uc 1 :5 `uc 1 ]
 [n S105 . xtal_div pll_dlt ]
-"234
-[; ;./QN8066.h: 234: typedef union {
+"236
+[; ;./QN8066.h: 236: typedef union {
 [u S104 `S105 1 `uc 1 ]
 [n S104 . arg raw ]
-"252
-[; ;./QN8066.h: 252: typedef union {
+"254
+[; ;./QN8066.h: 254: typedef union {
 [u S106 `uc 1 `uc 1 ]
 [n S106 . pll_dlt raw ]
-"684
-[; ;./QN8066.h: 684:   struct {
+"686
+[; ;./QN8066.h: 686:   struct {
 [s S135 :2 `uc 1 :2 `uc 1 :3 `uc 1 :1 `uc 1 ]
 [n S135 . RIN TXAGC_GDB TXAGC_GVGA tx_sftclpen ]
-"683
-[; ;./QN8066.h: 683: typedef union {
+"685
+[; ;./QN8066.h: 685: typedef union {
 [u S134 `S135 1 `uc 1 ]
 [n S134 . arg raw ]
-"601
-[; ;./QN8066.h: 601:   struct {
+"603
+[; ;./QN8066.h: 603:   struct {
 [s S131 :7 `uc 1 :1 `uc 1 ]
 [n S131 . RDSFDEV line_in_en ]
-"600
-[; ;./QN8066.h: 600: typedef union {
+"602
+[; ;./QN8066.h: 602: typedef union {
 [u S130 `S131 1 `uc 1 ]
 [n S130 . arg raw ]
-"560
-[; ;./QN8066.h: 560:   struct {
+"562
+[; ;./QN8066.h: 562:   struct {
 [s S128 :7 `uc 1 :1 `uc 1 ]
 [n S128 . PA_TRGT TXPD_CLR ]
-"559
-[; ;./QN8066.h: 559: typedef union {
+"561
+[; ;./QN8066.h: 561: typedef union {
 [u S127 `S128 1 `uc 1 ]
 [n S127 . arg raw ]
-"426
-[; ;./QN8066.h: 426:   struct {
+"428
+[; ;./QN8066.h: 428:   struct {
 [s S119 :3 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S119 . GAIN_ANA GAIN_DIG DAC_HOLD TX_DIFF ]
-"425
-[; ;./QN8066.h: 425: typedef union {
+"427
+[; ;./QN8066.h: 427: typedef union {
 [u S118 `S119 1 `uc 1 ]
 [n S118 . arg raw ]
 [p mainexit ]
@@ -264,74 +264,74 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2138
 [; ;/Users/rcaratti/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8/pic/include/proc/pic16f876a.h: 2138: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"812 ./QN8066.h
-[; ;./QN8066.h: 812: unsigned int resetDelay = 1000;
+"814 ./QN8066.h
+[; ;./QN8066.h: 814: unsigned int resetDelay = 1000;
 [v _resetDelay `ui ~T0 @X0 1 e ]
 [i _resetDelay
 -> -> 1000 `i `ui
 ]
-"813
-[; ;./QN8066.h: 813: unsigned int xtal_div = 1000;
+"815
+[; ;./QN8066.h: 815: unsigned int xtal_div = 1000;
 [v _xtal_div `ui ~T0 @X0 1 e ]
 [i _xtal_div
 -> -> 1000 `i `ui
 ]
-"815
-[; ;./QN8066.h: 815: qn8066_system1 reg_system1;
-[v _reg_system1 `S91 ~T0 @X0 1 e ]
-"816
-[; ;./QN8066.h: 816: qn8066_system2 reg_system2;
-[v _reg_system2 `S93 ~T0 @X0 1 e ]
 "817
-[; ;./QN8066.h: 817: qn8066_gplt reg_gplt;
-[v _reg_gplt `S132 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 817: qn8066_system1 reg_system1;
+[v _reg_system1 `S91 ~T0 @X0 1 e ]
 "818
-[; ;./QN8066.h: 818: qn8066_cca reg_cca;
-[v _reg_cca `S95 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 818: qn8066_system2 reg_system2;
+[v _reg_system2 `S93 ~T0 @X0 1 e ]
 "819
-[; ;./QN8066.h: 819: qn8066_fdev reg_fdev;
-[v _reg_fdev `S129 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 819: qn8066_gplt reg_gplt;
+[v _reg_gplt `S132 ~T0 @X0 1 e ]
 "820
-[; ;./QN8066.h: 820: qn8066_int_ctrl reg_int_ctrl;
-[v _reg_int_ctrl `S120 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 820: qn8066_cca reg_cca;
+[v _reg_cca `S95 ~T0 @X0 1 e ]
 "821
-[; ;./QN8066.h: 821: qn8066_txch txch;
-[v _txch `S124 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 821: qn8066_fdev reg_fdev;
+[v _reg_fdev `S129 ~T0 @X0 1 e ]
 "822
-[; ;./QN8066.h: 822: qn8066_xtal_div0 reg_xtal_div0;
-[v _reg_xtal_div0 `S103 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 822: qn8066_int_ctrl reg_int_ctrl;
+[v _reg_int_ctrl `S120 ~T0 @X0 1 e ]
 "823
-[; ;./QN8066.h: 823: qn8066_xtal_div1 reg_xtal_div1;
-[v _reg_xtal_div1 `S104 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 823: qn8066_txch txch;
+[v _txch `S124 ~T0 @X0 1 e ]
 "824
-[; ;./QN8066.h: 824: qn8066_xtal_div2 reg_xtal_div2;
-[v _reg_xtal_div2 `S106 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 824: qn8066_xtal_div0 reg_xtal_div0;
+[v _reg_xtal_div0 `S103 ~T0 @X0 1 e ]
 "825
-[; ;./QN8066.h: 825: qn8066_reg_vga reg_reg_vga;
-[v _reg_reg_vga `S134 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 825: qn8066_xtal_div1 reg_xtal_div1;
+[v _reg_xtal_div1 `S104 ~T0 @X0 1 e ]
 "826
-[; ;./QN8066.h: 826: qn8066_rds reg_rds;
-[v _reg_rds `S130 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 826: qn8066_xtal_div2 reg_xtal_div2;
+[v _reg_xtal_div2 `S106 ~T0 @X0 1 e ]
 "827
-[; ;./QN8066.h: 827: qn8066_pac reg_pac;
-[v _reg_pac `S127 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 827: qn8066_reg_vga reg_reg_vga;
+[v _reg_reg_vga `S134 ~T0 @X0 1 e ]
 "828
-[; ;./QN8066.h: 828: qn8066_vol_ctl reg_vol_ctl;
-[v _reg_vol_ctl `S118 ~T0 @X0 1 e ]
+[; ;./QN8066.h: 828: qn8066_rds reg_rds;
+[v _reg_rds `S130 ~T0 @X0 1 e ]
+"829
+[; ;./QN8066.h: 829: qn8066_pac reg_pac;
+[v _reg_pac `S127 ~T0 @X0 1 e ]
 "830
-[; ;./QN8066.h: 830: unsigned char rdsSyncTime = 60;
+[; ;./QN8066.h: 830: qn8066_vol_ctl reg_vol_ctl;
+[v _reg_vol_ctl `S118 ~T0 @X0 1 e ]
+"832
+[; ;./QN8066.h: 832: unsigned char rdsSyncTime = 60;
 [v _rdsSyncTime `uc ~T0 @X0 1 e ]
 [i _rdsSyncTime
 -> -> 60 `i `uc
 ]
-"831
-[; ;./QN8066.h: 831: unsigned char rdsRepeatGroup = 5;
+"833
+[; ;./QN8066.h: 833: unsigned char rdsRepeatGroup = 5;
 [v _rdsRepeatGroup `uc ~T0 @X0 1 e ]
 [i _rdsRepeatGroup
 -> -> 5 `i `uc
 ]
-"833
-[; ;./QN8066.h: 833: char rdsStationName[9] = " QN8066\r";
+"835
+[; ;./QN8066.h: 835: char rdsStationName[9] = " QN8066\r";
 [v _rdsStationName `uc ~T0 @X0 -> 9 `i e ]
 [i _rdsStationName
 :U ..
@@ -346,41 +346,54 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-"834
-[; ;./QN8066.h: 834: unsigned int rdsPI = 33179;
+"836
+[; ;./QN8066.h: 836: unsigned int rdsPI = 33179;
 [v _rdsPI `ui ~T0 @X0 1 e ]
 [i _rdsPI
 -> -> 33179 `l `ui
 ]
-"835
-[; ;./QN8066.h: 835: unsigned char rdsPTY = 5;
+"837
+[; ;./QN8066.h: 837: unsigned char rdsPTY = 5;
 [v _rdsPTY `uc ~T0 @X0 1 e ]
 [i _rdsPTY
 -> -> 5 `i `uc
 ]
-"836
-[; ;./QN8066.h: 836: unsigned char rdsTP = 0;
+"838
+[; ;./QN8066.h: 838: unsigned char rdsTP = 0;
 [v _rdsTP `uc ~T0 @X0 1 e ]
 [i _rdsTP
 -> -> 0 `i `uc
 ]
-"837
-[; ;./QN8066.h: 837: unsigned char rdsSendError = 0;
+"839
+[; ;./QN8066.h: 839: unsigned char rdsSendError = 0;
 [v _rdsSendError `uc ~T0 @X0 1 e ]
 [i _rdsSendError
 -> -> 0 `i `uc
 ]
+"19 main.c
+[p x FOSC  =  XT         ]
+"20
+[p x WDTE  =  OFF        ]
+"21
+[p x PWRTE  =  OFF       ]
+"22
+[p x BOREN  =  ON        ]
+"23
+[p x LVP  =  OFF         ]
+"24
+[p x CPD  =  OFF         ]
+"25
+[p x WRT  =  OFF         ]
+"26
+[p x CP  =  OFF          ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"12 main.c
-[; ;main.c: 12: void main(void) {
+"31
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"13
-[; ;main.c: 13:     return;
+"32
 [e $UE 144  ]
-"14
-[; ;main.c: 14: }
+"33
 [e :UE 144 ]
 }

@@ -1747,7 +1747,7 @@ extern __bank0 __bit __timeout;
 # 29 "/Applications/microchip/xc8/v2.46/pic/include/xc.h" 2 3
 # 10 "qn8066.c" 2
 # 1 "./QN8066.h" 1
-# 90 "./QN8066.h"
+# 92 "./QN8066.h"
 typedef union {
   struct {
     unsigned char cca_ch_dis : 1;
@@ -1761,7 +1761,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_system1;
-# 113 "./QN8066.h"
+# 115 "./QN8066.h"
 typedef union {
   struct {
     unsigned char tc : 1;
@@ -1775,7 +1775,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_system2;
-# 136 "./QN8066.h"
+# 138 "./QN8066.h"
 typedef union {
   struct {
     unsigned char SNR_CCA_TH : 6;
@@ -1784,17 +1784,17 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_cca;
-# 154 "./QN8066.h"
+# 156 "./QN8066.h"
 typedef union {
   unsigned char SNRDB;
   unsigned char raw;
 } qn8066_srn;
-# 169 "./QN8066.h"
+# 171 "./QN8066.h"
 typedef union {
   unsigned char RSSISIG;
   unsigned char raw;
 } qn8066_rssisig;
-# 183 "./QN8066.h"
+# 185 "./QN8066.h"
 typedef union {
   struct {
     unsigned char CID2 : 2;
@@ -1803,7 +1803,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_cid1;
-# 201 "./QN8066.h"
+# 203 "./QN8066.h"
 typedef union {
   struct {
     unsigned char CID4 : 2;
@@ -1811,12 +1811,12 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_cid2;
-# 219 "./QN8066.h"
+# 221 "./QN8066.h"
 typedef union {
   unsigned char xtal_div;
   unsigned char raw;
 } qn8066_xtal_div0;
-# 234 "./QN8066.h"
+# 236 "./QN8066.h"
 typedef union {
   struct {
     unsigned char xtal_div : 3;
@@ -1824,12 +1824,12 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_xtal_div1;
-# 252 "./QN8066.h"
+# 254 "./QN8066.h"
 typedef union {
   unsigned char pll_dlt;
   unsigned char raw;
 } qn8066_xtal_div2;
-# 282 "./QN8066.h"
+# 284 "./QN8066.h"
 typedef union {
   struct {
     unsigned char ST_MO_RX : 1;
@@ -1840,22 +1840,22 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_status1;
-# 310 "./QN8066.h"
+# 312 "./QN8066.h"
 typedef union {
   unsigned char RXCH;
   unsigned char raw;
 } qn8066_rx_ch;
-# 325 "./QN8066.h"
+# 327 "./QN8066.h"
 typedef union {
   unsigned char CH_START;
   unsigned char raw;
 } qn8066_ch_start;
-# 340 "./QN8066.h"
+# 342 "./QN8066.h"
 typedef union {
   unsigned char CH_STOP;
   unsigned char raw;
 } qn8066_ch_stop;
-# 354 "./QN8066.h"
+# 356 "./QN8066.h"
 typedef union {
   struct {
     unsigned char RXCH : 2;
@@ -1865,7 +1865,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_ch_step;
-# 373 "./QN8066.h"
+# 375 "./QN8066.h"
 typedef union {
   struct {
     unsigned char RX_RDSD0;
@@ -1879,7 +1879,7 @@ typedef union {
   } arg;
   unsigned char data[8];
 } qn8066_rx_rds;
-# 402 "./QN8066.h"
+# 404 "./QN8066.h"
 typedef union {
   struct {
     unsigned char RDS3ERR : 1;
@@ -1893,7 +1893,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_status2;
-# 425 "./QN8066.h"
+# 427 "./QN8066.h"
 typedef union {
   struct {
     unsigned char GAIN_ANA : 3;
@@ -1903,7 +1903,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_vol_ctl;
-# 444 "./QN8066.h"
+# 446 "./QN8066.h"
 typedef union {
   struct {
     unsigned char TXCH : 2;
@@ -1930,7 +1930,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_int_ctrl;
-# 481 "./QN8066.h"
+# 483 "./QN8066.h"
 typedef union {
   struct {
     unsigned char rsvd : 1;
@@ -1949,12 +1949,12 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_status3;
-# 517 "./QN8066.h"
+# 519 "./QN8066.h"
 typedef union {
   unsigned char TXCH;
   unsigned char raw;
 } qn8066_txch;
-# 532 "./QN8066.h"
+# 534 "./QN8066.h"
 typedef union {
   struct {
     unsigned char TX_RDSD0;
@@ -1968,7 +1968,7 @@ typedef union {
   } arg;
   unsigned char data[8];
 } qn8066_tx_rds;
-# 559 "./QN8066.h"
+# 561 "./QN8066.h"
 typedef union {
   struct {
     unsigned char PA_TRGT : 7;
@@ -1980,13 +1980,13 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_pac;
-# 582 "./QN8066.h"
+# 584 "./QN8066.h"
 typedef union {
   unsigned char TX_FDEV;
 
   unsigned char raw;
 } qn8066_fdev;
-# 600 "./QN8066.h"
+# 602 "./QN8066.h"
 typedef union {
   struct {
     unsigned char RDSFDEV : 7;
@@ -1994,7 +1994,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_rds;
-# 639 "./QN8066.h"
+# 641 "./QN8066.h"
 typedef union {
   struct {
     unsigned char GAIN_TXPLT : 4;
@@ -2003,7 +2003,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_gplt;
-# 683 "./QN8066.h"
+# 685 "./QN8066.h"
 typedef union {
   struct {
     unsigned char RIN : 2;
@@ -2014,7 +2014,7 @@ typedef union {
   } arg;
   unsigned char raw;
 } qn8066_reg_vga;
-# 701 "./QN8066.h"
+# 703 "./QN8066.h"
 typedef union {
   struct {
     unsigned char reference : 7 ;
@@ -2024,7 +2024,7 @@ typedef union {
   unsigned char byteContent[2];
   unsigned int pi;
 } RDS_BLOCK1;
-# 756 "./QN8066.h"
+# 758 "./QN8066.h"
 typedef union
 {
     struct
@@ -2108,21 +2108,104 @@ unsigned char rdsPTY = 5;
 unsigned char rdsTP = 0;
 unsigned char rdsSendError = 0;
 
+
+void i2c_begin(int c, long pic_xtal);
+void i2c_start();
+void i2c_stop();
+void i2c_write(unsigned char data);
+unsigned char i2c_read(unsigned char);
+
 void set_register(unsigned char registerNumber, unsigned char value);
 unsigned char get_register(unsigned char registerNumber);
 
 
 
 void qn8066_begin();
+void qn8066_set_tx(unsigned int frequency);
 # 11 "qn8066.c" 2
+# 23 "qn8066.c"
+void i2c_begin(int c, long pic_xtal) {
 
-void set_register(unsigned char registerNumber, unsigned char value) {
+    SSPCON = 0b00101000;
+    SSPCON2 = 0;
 
+    SSPSTAT = 0;
+    TRISC3 = 1;
+    TRISC4 = 1;
 }
 
-unsigned char get_register(unsigned char registerNumber) {
 
-    return 0;
+
+
+
+
+void i2c_start() {
+    SSPCON2bits.SEN = 1;
+    while(SSPCON2bits.SEN);
+}
+
+
+
+
+
+void i2c_stop() {
+    SSPCON2bits.PEN = 1;
+    while(SSPCON2bits.PEN);
+}
+
+
+
+
+
+
+void i2c_write(unsigned char data) {
+    SSPBUF = data;
+    while(SSPSTATbits.BF);
+    while(SSPCON2bits.ACKSTAT);
+}
+
+
+
+
+
+
+unsigned char i2c_read(unsigned char ack) {
+    unsigned char aux;
+    SSPCON2bits.RCEN = 1;
+    while(!SSPSTATbits.BF);
+    aux = SSPBUF;
+    SSPCON2bits.ACKDT = (ack)?0:1;
+    SSPCON2bits.ACKEN = 1;
+    while(SSPCON2bits.ACKEN);
+    return aux;
+}
+
+
+void set_register(unsigned char registerNumber, unsigned char value) {
+    i2c_start();
+    i2c_write(0x21);
+    i2c_write(registerNumber);
+    i2c_write(value);
+    i2c_stop();
+    _delay((unsigned long)((2)*(4000000/4000.0)));
+}
+
+
+unsigned char get_register(unsigned char registerNumber) {
+    unsigned char value;
+    i2c_start();
+    i2c_write(0x21);
+    i2c_write(registerNumber);
+
+    i2c_start();
+    i2c_write(0x21 + 1);
+    value = i2c_read(1);
+
+    i2c_stop();
+
+    _delay((unsigned long)((2)*(4000000/4000.0)));
+
+    return value;
 }
 
 
@@ -2138,4 +2221,41 @@ void qn8066_begin() {
   reg_int_ctrl.raw = get_register(0x19);
   reg_pac.raw = get_register(0x24);
   reg_vol_ctl.raw = get_register(0x18);
+}
+
+
+void qn8066_set_tx(unsigned int frequency) {
+
+  reg_system1.raw = 0B11100011;
+  set_register(0x00, reg_system1.raw);
+  set_register(0x01, reg_system2.raw);
+  reg_system2.arg.rdsrdy = !(reg_system2.arg.rdsrdy);
+  set_register(0x01, reg_system2.raw);
+  set_register(0x02, reg_cca.raw);
+
+  set_register(0x07, xtal_div & 0xFF);
+  set_register(0x08, (xtal_div >> 8) | 0B0001000);
+  set_register(0x09, 0B01011100);
+
+
+  set_register(0x25, reg_fdev.raw);
+  set_register(0x26, reg_rds.raw);
+  set_register(0x27, reg_gplt.raw);
+
+  unsigned int auxFreq = (frequency - 600) * 2;
+  reg_int_ctrl.raw = 0B00100000 | auxFreq >> 8;
+  set_register(0x19,reg_int_ctrl.raw );
+  set_register(0x1B, 0B11111111 & auxFreq);
+
+
+
+  set_register(0x49, 0B11011111);
+  set_register(0x6E, 0B11111111);
+
+  reg_system1.raw = 0B00001011;
+  set_register(0x00, reg_system1.raw);
+
+  set_register(0x28, reg_reg_vga.raw);
+  _delay((unsigned long)((100)*(4000000/4000.0)));
+
 }
