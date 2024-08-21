@@ -96,6 +96,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [u S118 `S119 1 `uc 1 ]
 [n S118 . arg raw ]
 [p mainexit ]
+"853
+[; ;./QN8066.h: 853: void qn8066_begin(void);
+[v _qn8066_begin `(v ~T0 @X0 0 ef ]
+"854
+[; ;./QN8066.h: 854: void qn8066_set_tx(unsigned int frequency);
+[v _qn8066_set_tx `(v ~T0 @X0 0 ef1`ui ]
 "54 /Users/rcaratti/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8/pic/include/proc/pic16f876a.h
 [; ;/Users/rcaratti/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8/pic/include/proc/pic16f876a.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -370,30 +376,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _rdsSendError
 -> -> 0 `i `uc
 ]
-"19 main.c
+"22 main.c
 [p x FOSC  =  XT         ]
-"20
-[p x WDTE  =  OFF        ]
-"21
-[p x PWRTE  =  OFF       ]
-"22
-[p x BOREN  =  ON        ]
 "23
-[p x LVP  =  OFF         ]
+[p x WDTE  =  OFF        ]
 "24
-[p x CPD  =  OFF         ]
+[p x PWRTE  =  OFF       ]
 "25
-[p x WRT  =  OFF         ]
+[p x BOREN  =  ON        ]
 "26
+[p x LVP  =  OFF         ]
+"27
+[p x CPD  =  OFF         ]
+"28
+[p x WRT  =  OFF         ]
+"29
 [p x CP  =  OFF          ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"31
+"32
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"32
+"34
+[e ( _qn8066_begin ..  ]
+"35
+[e ( _qn8066_set_tx (1 -> -> 1069 `i `ui ]
+"37
+[e :U 146 ]
+{
+"39
+}
+[e :U 145 ]
+[e $U 146  ]
+[e :U 147 ]
+"41
 [e $UE 144  ]
-"33
+"42
 [e :UE 144 ]
 }

@@ -850,7 +850,7 @@ unsigned char get_register(unsigned char registerNumber);
 
 
 
-void qn8066_begin();  
+void qn8066_begin(void);  
 void qn8066_set_tx(unsigned int frequency);
 
 

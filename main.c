@@ -30,5 +30,13 @@
 
 
 void main(void) {
+    
+    qn8066_begin();
+    qn8066_set_tx(1069);
+    
+    while (1) {
+        
+    }
+    
     return;
 }

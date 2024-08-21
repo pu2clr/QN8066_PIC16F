@@ -11,7 +11,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"31 /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
+"32 /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
 [v _main main `(v  1 e 1 0 ]
 "38 /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
 [v _i2c_start i2c_start `(v  1 e 1 0 ]
@@ -25,6 +25,10 @@
 [v _set_register set_register `(v  1 e 1 0 ]
 "90
 [v _get_register get_register `(uc  1 e 1 0 ]
+"108
+[v _qn8066_begin qn8066_begin `(v  1 e 1 0 ]
+"123
+[v _qn8066_set_tx qn8066_set_tx `(v  1 e 1 0 ]
 [s S22 . 1 `uc 1 cca_ch_dis 1 0 :1:0 
 `uc 1 ccs_ch_dis 1 0 :1:1 
 `uc 1 chsc 1 0 :1:2 
@@ -172,8 +176,73 @@
 [v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
 "2699
 [v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
-"31 /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
+"32 /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"33
+"42
+} 0
+"123 /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
+[v _qn8066_set_tx qn8066_set_tx `(v  1 e 1 0 ]
+{
+"141
+[v qn8066_set_tx@auxFreq auxFreq `ui  1 a 2 9 ]
+"123
+[v qn8066_set_tx@frequency frequency `ui  1 p 2 5 ]
+"157
+} 0
+"80
+[v _set_register set_register `(v  1 e 1 0 ]
+{
+[v set_register@registerNumber registerNumber `uc  1 a 1 wreg ]
+[v set_register@registerNumber registerNumber `uc  1 a 1 wreg ]
+[v set_register@value value `uc  1 p 1 1 ]
+[v set_register@registerNumber registerNumber `uc  1 a 1 4 ]
+"87
+} 0
+"108
+[v _qn8066_begin qn8066_begin `(v  1 e 1 0 ]
+{
+"120
+} 0
+"90
+[v _get_register get_register `(uc  1 e 1 0 ]
+{
+[v get_register@registerNumber registerNumber `uc  1 a 1 wreg ]
+"91
+[v get_register@value value `uc  1 a 1 5 ]
+"90
+[v get_register@registerNumber registerNumber `uc  1 a 1 wreg ]
+"92
+[v get_register@registerNumber registerNumber `uc  1 a 1 4 ]
+"105
+} 0
+"57
+[v _i2c_write i2c_write `(v  1 e 1 0 ]
+{
+[v i2c_write@data data `uc  1 a 1 wreg ]
+[v i2c_write@data data `uc  1 a 1 wreg ]
+[v i2c_write@data data `uc  1 a 1 0 ]
+"61
+} 0
+"47
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"50
+} 0
+"38
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"41
+} 0
+"68
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+[v i2c_read@ack ack `uc  1 a 1 wreg ]
+"69
+[v i2c_read@aux aux `uc  1 a 1 1 ]
+"68
+[v i2c_read@ack ack `uc  1 a 1 wreg ]
+"70
+[v i2c_read@ack ack `uc  1 a 1 0 ]
+"77
 } 0

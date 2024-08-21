@@ -105,7 +105,7 @@ unsigned char get_register(unsigned char registerNumber) {
 }
 
 
-void qn8066_begin() {
+void qn8066_begin(void) {
   reg_system1.raw = 0B11100011;
   reg_system2.raw = 0;
   reg_cca.raw = get_register(REG_CCA);

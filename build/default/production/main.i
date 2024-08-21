@@ -7,14 +7,7 @@
 # 1 "/Applications/microchip/xc8/v2.46/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-
-
-
-
-
-
-
-
+# 12 "main.c"
 # 1 "/Applications/microchip/xc8/v2.46/pic/include/xc.h" 1 3
 # 18 "/Applications/microchip/xc8/v2.46/pic/include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -1745,7 +1738,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "/Applications/microchip/xc8/v2.46/pic/include/xc.h" 2 3
-# 10 "main.c" 2
+# 13 "main.c" 2
 # 1 "./QN8066.h" 1
 # 92 "./QN8066.h"
 typedef union {
@@ -2120,9 +2113,9 @@ unsigned char get_register(unsigned char registerNumber);
 
 
 
-void qn8066_begin();
+void qn8066_begin(void);
 void qn8066_set_tx(unsigned int frequency);
-# 11 "main.c" 2
+# 14 "main.c" 2
 
 
 
@@ -2141,8 +2134,14 @@ void qn8066_set_tx(unsigned int frequency);
 #pragma config CP = OFF
 
 
-
-
 void main(void) {
+
+    qn8066_begin();
+    qn8066_set_tx(1069);
+
+    while (1) {
+
+    }
+
     return;
 }

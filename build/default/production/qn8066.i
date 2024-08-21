@@ -2120,7 +2120,7 @@ unsigned char get_register(unsigned char registerNumber);
 
 
 
-void qn8066_begin();
+void qn8066_begin(void);
 void qn8066_set_tx(unsigned int frequency);
 # 11 "qn8066.c" 2
 # 23 "qn8066.c"
@@ -2209,7 +2209,7 @@ unsigned char get_register(unsigned char registerNumber) {
 }
 
 
-void qn8066_begin() {
+void qn8066_begin(void) {
   reg_system1.raw = 0B11100011;
   reg_system2.raw = 0;
   reg_cca.raw = get_register(0x02);
