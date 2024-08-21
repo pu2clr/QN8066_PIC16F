@@ -185,7 +185,7 @@ text6 C30 C3F CODE C30 0
 text7 C20 C2F CODE C20 0
 %locals
 dist/default/production/QN8066_PIC16F.production.o
-/tmp/xcBhBtUWK/driver_tmp_1.s
+/tmp/xcrqt3Xyc/driver_tmp_1.s
 527 7DE 0 CODE 0
 530 7DE 0 CODE 0
 661 7DE 0 CODE 0
@@ -235,11 +235,11 @@ dist/default/production/QN8066_PIC16F.production.o
 656 665 0 CODE 0
 657 666 0 CODE 0
 main.c
-32 630 0 CODE 0
-34 630 0 CODE 0
-35 635 0 CODE 0
-37 63E 0 CODE 0
-39 63E 0 CODE 0
+31 630 0 CODE 0
+33 630 0 CODE 0
+34 635 0 CODE 0
+36 63E 0 CODE 0
+38 63E 0 CODE 0
 qn8066.c
 123 72B 0 CODE 0
 125 72B 0 CODE 0

@@ -393,25 +393,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29
 [p x CP  =  OFF          ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"32
+"31
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"34
+"33
 [e ( _qn8066_begin ..  ]
-"35
+"34
 [e ( _qn8066_set_tx (1 -> -> 1069 `i `ui ]
-"37
+"36
 [e :U 146 ]
 {
-"39
+"38
 }
 [e :U 145 ]
 [e $U 146  ]
 [e :U 147 ]
-"41
+"40
 [e $UE 144  ]
-"42
+"41
 [e :UE 144 ]
 }

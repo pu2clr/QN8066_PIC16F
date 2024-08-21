@@ -2133,7 +2133,6 @@ void qn8066_set_tx(unsigned int frequency);
 #pragma config WRT = OFF
 #pragma config CP = OFF
 
-
 void main(void) {
 
     qn8066_begin();

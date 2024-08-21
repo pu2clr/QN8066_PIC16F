@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcBhBtUWK/driver_tmp_12.o
+$/tmp/xcrqt3Xyc/driver_tmp_12.o
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 1 2 1
 $dist/default/production/QN8066_PIC16F.production.o
@@ -76,37 +76,37 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/QN8066_PIC16F.production.o
-7DE cinit CODE >527:/tmp/xcBhBtUWK/driver_tmp_1.s
-7DE cinit CODE >530:/tmp/xcBhBtUWK/driver_tmp_1.s
-7DE cinit CODE >661:/tmp/xcBhBtUWK/driver_tmp_1.s
-7DF cinit CODE >662:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E0 cinit CODE >663:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E1 cinit CODE >664:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E2 cinit CODE >665:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E3 cinit CODE >666:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E4 cinit CODE >667:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E5 cinit CODE >668:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E6 cinit CODE >669:/tmp/xcBhBtUWK/driver_tmp_1.s
-7E7 cinit CODE >670:/tmp/xcBhBtUWK/driver_tmp_1.s
-7EC cinit CODE >674:/tmp/xcBhBtUWK/driver_tmp_1.s
-7ED cinit CODE >675:/tmp/xcBhBtUWK/driver_tmp_1.s
-7EE cinit CODE >676:/tmp/xcBhBtUWK/driver_tmp_1.s
-7EF cinit CODE >677:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F0 cinit CODE >678:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F1 cinit CODE >679:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F2 cinit CODE >680:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F3 cinit CODE >681:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F4 cinit CODE >682:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F5 cinit CODE >683:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F6 cinit CODE >684:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F7 cinit CODE >685:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F8 cinit CODE >686:/tmp/xcBhBtUWK/driver_tmp_1.s
-7F9 cinit CODE >689:/tmp/xcBhBtUWK/driver_tmp_1.s
-7FA cinit CODE >690:/tmp/xcBhBtUWK/driver_tmp_1.s
-7FB cinit CODE >691:/tmp/xcBhBtUWK/driver_tmp_1.s
-7FC cinit CODE >697:/tmp/xcBhBtUWK/driver_tmp_1.s
-7FC cinit CODE >699:/tmp/xcBhBtUWK/driver_tmp_1.s
-7FD cinit CODE >700:/tmp/xcBhBtUWK/driver_tmp_1.s
+7DE cinit CODE >527:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7DE cinit CODE >530:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7DE cinit CODE >661:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7DF cinit CODE >662:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E0 cinit CODE >663:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E1 cinit CODE >664:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E2 cinit CODE >665:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E3 cinit CODE >666:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E4 cinit CODE >667:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E5 cinit CODE >668:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E6 cinit CODE >669:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7E7 cinit CODE >670:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7EC cinit CODE >674:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7ED cinit CODE >675:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7EE cinit CODE >676:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7EF cinit CODE >677:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F0 cinit CODE >678:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F1 cinit CODE >679:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F2 cinit CODE >680:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F3 cinit CODE >681:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F4 cinit CODE >682:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F5 cinit CODE >683:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F6 cinit CODE >684:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F7 cinit CODE >685:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F8 cinit CODE >686:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7F9 cinit CODE >689:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7FA cinit CODE >690:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7FB cinit CODE >691:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7FC cinit CODE >697:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7FC cinit CODE >699:/tmp/xcrqt3Xyc/driver_tmp_1.s
+7FD cinit CODE >700:/tmp/xcrqt3Xyc/driver_tmp_1.s
 667 text8 CODE >68:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
 668 text8 CODE >70:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
 66B text8 CODE >71:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
@@ -188,28 +188,28 @@ $dist/default/production/QN8066_PIC16F.production.o
 7CA text1 CODE >154:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
 7D4 text1 CODE >155:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
 7DD text1 CODE >157:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c
-630 maintext CODE >32:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
-630 maintext CODE >34:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
-635 maintext CODE >35:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
-63E maintext CODE >37:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
-63E maintext CODE >39:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
-654 inittext CODE >635:/tmp/xcBhBtUWK/driver_tmp_1.s
-654 inittext CODE >636:/tmp/xcBhBtUWK/driver_tmp_1.s
-655 inittext CODE >637:/tmp/xcBhBtUWK/driver_tmp_1.s
-656 inittext CODE >638:/tmp/xcBhBtUWK/driver_tmp_1.s
-657 inittext CODE >639:/tmp/xcBhBtUWK/driver_tmp_1.s
-658 inittext CODE >646:/tmp/xcBhBtUWK/driver_tmp_1.s
-658 inittext CODE >647:/tmp/xcBhBtUWK/driver_tmp_1.s
-65D inittext CODE >648:/tmp/xcBhBtUWK/driver_tmp_1.s
-65E inittext CODE >649:/tmp/xcBhBtUWK/driver_tmp_1.s
-65F inittext CODE >650:/tmp/xcBhBtUWK/driver_tmp_1.s
-660 inittext CODE >651:/tmp/xcBhBtUWK/driver_tmp_1.s
-661 inittext CODE >652:/tmp/xcBhBtUWK/driver_tmp_1.s
-662 inittext CODE >653:/tmp/xcBhBtUWK/driver_tmp_1.s
-663 inittext CODE >654:/tmp/xcBhBtUWK/driver_tmp_1.s
-664 inittext CODE >655:/tmp/xcBhBtUWK/driver_tmp_1.s
-665 inittext CODE >656:/tmp/xcBhBtUWK/driver_tmp_1.s
-666 inittext CODE >657:/tmp/xcBhBtUWK/driver_tmp_1.s
+630 maintext CODE >31:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
+630 maintext CODE >33:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
+635 maintext CODE >34:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
+63E maintext CODE >36:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
+63E maintext CODE >38:/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c
+654 inittext CODE >635:/tmp/xcrqt3Xyc/driver_tmp_1.s
+654 inittext CODE >636:/tmp/xcrqt3Xyc/driver_tmp_1.s
+655 inittext CODE >637:/tmp/xcrqt3Xyc/driver_tmp_1.s
+656 inittext CODE >638:/tmp/xcrqt3Xyc/driver_tmp_1.s
+657 inittext CODE >639:/tmp/xcrqt3Xyc/driver_tmp_1.s
+658 inittext CODE >646:/tmp/xcrqt3Xyc/driver_tmp_1.s
+658 inittext CODE >647:/tmp/xcrqt3Xyc/driver_tmp_1.s
+65D inittext CODE >648:/tmp/xcrqt3Xyc/driver_tmp_1.s
+65E inittext CODE >649:/tmp/xcrqt3Xyc/driver_tmp_1.s
+65F inittext CODE >650:/tmp/xcrqt3Xyc/driver_tmp_1.s
+660 inittext CODE >651:/tmp/xcrqt3Xyc/driver_tmp_1.s
+661 inittext CODE >652:/tmp/xcrqt3Xyc/driver_tmp_1.s
+662 inittext CODE >653:/tmp/xcrqt3Xyc/driver_tmp_1.s
+663 inittext CODE >654:/tmp/xcrqt3Xyc/driver_tmp_1.s
+664 inittext CODE >655:/tmp/xcrqt3Xyc/driver_tmp_1.s
+665 inittext CODE >656:/tmp/xcrqt3Xyc/driver_tmp_1.s
+666 inittext CODE >657:/tmp/xcrqt3Xyc/driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -236,12 +236,12 @@ _i2c_read CCE 0 CODE 0 text8 dist/default/production/QN8066_PIC16F.production.o
 _i2c_stop C30 0 CODE 0 text6 dist/default/production/QN8066_PIC16F.production.o
 __L__absolute__ 0 0 ABS 0 __absolute__ -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack /tmp/xcBhBtUWK/driver_tmp_12.o
+___sp 0 0 STACK 2 stack /tmp/xcrqt3Xyc/driver_tmp_12.o
 _main C60 0 CODE 0 maintext dist/default/production/QN8066_PIC16F.production.o
 btemp 7E 0 ABS 0 - dist/default/production/QN8066_PIC16F.production.o
-___stack_hi 0 0 STACK 2 stack /tmp/xcBhBtUWK/driver_tmp_12.o
-___stack_lo 0 0 STACK 2 stack /tmp/xcBhBtUWK/driver_tmp_12.o
-start 0 0 CODE 0 init /tmp/xcBhBtUWK/driver_tmp_12.o
+___stack_hi 0 0 STACK 2 stack /tmp/xcrqt3Xyc/driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack /tmp/xcrqt3Xyc/driver_tmp_12.o
+start 0 0 CODE 0 init /tmp/xcrqt3Xyc/driver_tmp_12.o
 __end_of_i2c_read D0A 0 CODE 0 text8 dist/default/production/QN8066_PIC16F.production.o
 __end_of_i2c_stop C40 0 CODE 0 text6 dist/default/production/QN8066_PIC16F.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
@@ -249,12 +249,12 @@ _qn8066_set_tx E56 0 CODE 0 text1 dist/default/production/QN8066_PIC16F.producti
 _set_register D0A 0 CODE 0 text2 dist/default/production/QN8066_PIC16F.production.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab /tmp/xcBhBtUWK/driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab /tmp/xcBhBtUWK/driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab /tmp/xcBhBtUWK/driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab /tmp/xcBhBtUWK/driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab /tmp/xcBhBtUWK/driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab /tmp/xcBhBtUWK/driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xcrqt3Xyc/driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcrqt3Xyc/driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcrqt3Xyc/driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcrqt3Xyc/driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcrqt3Xyc/driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcrqt3Xyc/driver_tmp_12.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 wtemp0 7E 0 ABS 0 - dist/default/production/QN8066_PIC16F.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -266,8 +266,8 @@ __end_of_i2c_start C30 0 CODE 0 text7 dist/default/production/QN8066_PIC16F.prod
 __end_of_i2c_write C60 0 CODE 0 text5 dist/default/production/QN8066_PIC16F.production.o
 __end_of_set_register D58 0 CODE 0 text2 dist/default/production/QN8066_PIC16F.production.o
 _reg_reg_vga 37 0 BANK0 1 bssBANK0 dist/default/production/QN8066_PIC16F.production.o
-___stackhi 0 0 ABS 0 - /tmp/xcBhBtUWK/driver_tmp_12.o
-___stacklo 0 0 ABS 0 - /tmp/xcBhBtUWK/driver_tmp_12.o
+___stackhi 0 0 ABS 0 - /tmp/xcrqt3Xyc/driver_tmp_12.o
+___stacklo 0 0 ABS 0 - /tmp/xcrqt3Xyc/driver_tmp_12.o
 _i2c_start C20 0 CODE 0 text7 dist/default/production/QN8066_PIC16F.production.o
 _i2c_write C40 0 CODE 0 text5 dist/default/production/QN8066_PIC16F.production.o
 start_initialization FBC 0 CODE 0 cinit dist/default/production/QN8066_PIC16F.production.o
@@ -279,7 +279,7 @@ _TRISC4 43C 0 ABS 0 - dist/default/production/QN8066_PIC16F.production.o
 _reg_cca 3E 0 BANK0 1 bssBANK0 dist/default/production/QN8066_PIC16F.production.o
 _reg_pac 35 0 BANK0 1 bssBANK0 dist/default/production/QN8066_PIC16F.production.o
 _reg_rds 36 0 BANK0 1 bssBANK0 dist/default/production/QN8066_PIC16F.production.o
-___int_sp 0 0 STACK 2 stack /tmp/xcBhBtUWK/driver_tmp_12.o
+___int_sp 0 0 STACK 2 stack /tmp/xcrqt3Xyc/driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -323,7 +323,7 @@ __S1 7E 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 0 0 CODE 0 intentry -
 _reg_vol_ctl 34 0 BANK0 1 bssBANK0 dist/default/production/QN8066_PIC16F.production.o
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcBhBtUWK/driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcrqt3Xyc/driver_tmp_12.o
 __pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production/QN8066_PIC16F.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __pmaintext C60 0 CODE 0 maintext dist/default/production/QN8066_PIC16F.production.o
@@ -369,8 +369,8 @@ __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-___heap_hi 0 0 ABS 0 - /tmp/xcBhBtUWK/driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - /tmp/xcBhBtUWK/driver_tmp_12.o
+___heap_hi 0 0 ABS 0 - /tmp/xcrqt3Xyc/driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - /tmp/xcrqt3Xyc/driver_tmp_12.o
 qn8066_set_tx@frequency 75 0 COMMON 1 cstackCOMMON dist/default/production/QN8066_PIC16F.production.o
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production/QN8066_PIC16F.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
@@ -389,8 +389,8 @@ __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __initialization FBC 0 CODE 0 cinit dist/default/production/QN8066_PIC16F.production.o
 __end_of_get_register DC0 0 CODE 0 text4 dist/default/production/QN8066_PIC16F.production.o
 __pbssBANK0 32 0 BANK0 1 bssBANK0 dist/default/production/QN8066_PIC16F.production.o
-___int_stack_hi 0 0 STACK 2 stack /tmp/xcBhBtUWK/driver_tmp_12.o
-___int_stack_lo 0 0 STACK 2 stack /tmp/xcBhBtUWK/driver_tmp_12.o
+___int_stack_hi 0 0 STACK 2 stack /tmp/xcrqt3Xyc/driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack /tmp/xcrqt3Xyc/driver_tmp_12.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.

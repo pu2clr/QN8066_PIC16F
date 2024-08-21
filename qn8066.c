@@ -21,7 +21,6 @@
  * @brief i2c setup
  */
 void i2c_begin(int c, long pic_xtal) {
-
     SSPCON = 0b00101000;   // 
     SSPCON2 = 0;
     // SSPADD = (pic_xtal/(4*c))-1;  // Configurar o clock do I2C (Fosc / (4 * BaudRate)) - 1
