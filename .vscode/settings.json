@@ -1,0 +1,5 @@
+{
+    "clangd.arguments": [
+        "--compile-commands-dir=/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/_build_mplab/QN8066_FM_TRANSMITTER/default/image_default.elf"
+    ]
+}

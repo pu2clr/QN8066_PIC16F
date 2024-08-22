@@ -1,0 +1,5 @@
+set(CMAKE_C_COMPILER_WORKS 1)
+set(MP_CC_DIR "/Applications/microchip/xc8/v2.46")
+set(CMAKE_C_COMPILER "/Applications/microchip/xc8/v2.46/bin/xc8-cc")
+set(MP_AS "/Applications/microchip/xc8/v2.46/bin/xc8-cc")
+set(MP_LD "/Applications/microchip/xc8/v2.46/bin/xc8-cc")

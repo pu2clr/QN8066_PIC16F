@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/_build_mplab/QN8066_FM_TRANSMITTER/default/image_default.elf",
+  "command": "/Applications/microchip/xc8/v2.46/bin/xc8-cc -mcpu=16F876A -c -mdfp=/Users/rcaratti/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8 -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-2 -Wa,-a -DXPRJ_default=default -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles/compile.dir/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c.p1 -c /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c",
+  "file": "/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c",
+  "output": "CMakeFiles/compile.dir/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/qn8066.c.p1"
+},
+{
+  "directory": "/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/_build_mplab/QN8066_FM_TRANSMITTER/default/image_default.elf",
+  "command": "/Applications/microchip/xc8/v2.46/bin/xc8-cc -mcpu=16F876A -c -mdfp=/Users/rcaratti/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8 -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-2 -Wa,-a -DXPRJ_default=default -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles/compile.dir/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c.p1 -c /Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c",
+  "file": "/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c",
+  "output": "CMakeFiles/compile.dir/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/main.c.p1"
+}
+]
