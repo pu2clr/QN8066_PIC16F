@@ -18,7 +18,7 @@ void i2c_initialize() //Begin IIC as master
 {
 	TRISC3=TRISC4=1;
 	SSPCON=0x28;					//SSP Module as Master
-	SSPADD=  ((11059200/4)/100)-1;	//Setting Clock Speed, My PCLK = 11.0592MHz
+	SSPADD=  9; //((4000000/4)/100000)-1;	
 }
   
 
