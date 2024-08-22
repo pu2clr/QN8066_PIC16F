@@ -161,15 +161,6 @@
     ],
     "fileSets": [
         {
-            "name": "MPLAB X Virtual Filesystem",
-            "contains": [
-                "Header Files",
-                "Linker Files",
-                "Source Files",
-                "Important Files"
-            ]
-        },
-        {
             "name": "Header Files"
         },
         {
@@ -192,6 +183,12 @@
                 "Makefile"
             ],
             "encoding": "ISO-8859-1"
+        },
+        {
+            "name": "MPLAB X Virtual Filesystem",
+            "files": [
+                "i2c.h"
+            ]
         }
     ]
 }

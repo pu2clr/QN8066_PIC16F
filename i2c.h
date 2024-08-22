@@ -22,7 +22,7 @@ void i2c_initialize(const unsigned long clock, const unsigned long XTAL_FREQ ) /
   SSPCON  = 0b00101000;    //pg84/234 
   SSPCON2 = 0b00000000;    //pg85/234
   
-  SSPADD = (XTAL_FREQ/(4*clock*100))-1; //Setting Clock Speed pg99/234
+  SSPADD = 9; // (XTAL_FREQ/(4*clock*100))-1; //Setting Clock Speed pg99/234
   SSPSTAT = 0b00000000;    //pg83/234
 }
 

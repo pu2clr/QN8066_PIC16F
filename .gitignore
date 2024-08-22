@@ -7,3 +7,9 @@ _buid_mplab/
 nbproject/Makefile-default.mk
 nbproject/Makefile-genesis.properties
 nbproject/Makefile-local-default.mk
+.generated-cmakefiles/QN8066_FM_TRANSMITTER/default/image_default.elf/file.cmake
+.vscode/QN8066_FM_TRANSMITTER.mplab.json
+_build_mplab/QN8066_FM_TRANSMITTER/default/image_default.elf/CMakeFiles/CMakeConfigureLog.yaml
+nbproject/Makefile-default.mk
+nbproject/Makefile-genesis.properties
+nbproject/Makefile-local-default.mk

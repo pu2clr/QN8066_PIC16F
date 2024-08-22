@@ -678,3 +678,409 @@ events:
       Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
       (2042) no target device specified; use the -mcpu option to specify a target device
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+      Microchip MPLAB XC8 C Compiler V2.46
+      Build date: Jan  4 2024
+      Part Support Version: 2.46
+      Copyright (C) 2024 Microchip Technology Inc.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1205 (message)"
+      - "/Users/rcaratti/homebrew/Cellar/cmake/3.30.2/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:22 (project)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+      (2042) no target device specified; use the -mcpu option to specify a target device
+...

@@ -36,7 +36,7 @@ unsigned char get_register(unsigned char registerNumber) {
     i2c_begin();                       
     i2c_write(QN8066_I2C_ADDRESS);      // Send device address with the write bit
     i2c_write(registerNumber);          // Send the register address we want to read 
-        
+    i2c_begin();     
     i2c_write(QN8066_I2C_ADDRESS + 1);  // Send device address with the read bit
     value = i2c_read(1);                // Read a byte and send NACK after the read to indicate the read is completed
         
