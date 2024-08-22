@@ -16,17 +16,11 @@
 
 void i2c_initialize() //Begin IIC as master
 {
-	TRISC3 = 1;      /* SDA and SCL as input pin */
-	TRISC4 = 1;      /* these pins can be configured either i/p or o/p */
-	SSPSTAT |= 0x80; /* Slew rate disabled */
-	SSPCON = 0x28;   /* SSPEN = 1, I2C Master mode, clock = FOSC/(4 * (SSPADD + 1)) */
-	SSPADD = 0x28;    /* 100Khz @ 4Mhz Fosc */  
+	TRISC3=TRISC4=1;
+	SSPCON=0x28;					//SSP Module as Master
+	SSPADD=  ((11059200/4)/100)-1;	//Setting Clock Speed, My PCLK = 11.0592MHz
 }
-
-void i2c_hold()
-{
-    while(SEN); 
-}     
+  
 
 void i2c_begin()
 {
