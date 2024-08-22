@@ -30,13 +30,13 @@
 
 void main(void) {
     
-    // i2c_begin(1000, _XTAL_FREQ );
+    i2c_begin(1000, _XTAL_FREQ );
     
     qn8066_begin();
     qn8066_set_tx(1069);
     
     while (1) {
-        
+        __delay_ms(5);
     }
     
     return;
