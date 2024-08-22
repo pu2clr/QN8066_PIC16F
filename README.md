@@ -55,3 +55,6 @@ The Logic signals level of the QN8066 device (CEN, SCL, SDA, to GND) works from 
 
 ## References
 
+* [PIC16F87XA Data Sheet - 28/40/44-Pin Enhanced Flash Microcontrollers](https://ww1.microchip.com/downloads/en/devicedoc/39582b.pdf)
+* [I2C Communication with PIC Microcontroller PIC16F877](https://circuitdigest.com/microcontroller-projects/i2c-communication-with-pic-microcontroller-pic16f877a)
+* [PIC16F877A I2C Tutorial](https://embetronicx.com/tutorials/microcontrollers/pic16f877a/pic16f877a-i2c-tutorial/)

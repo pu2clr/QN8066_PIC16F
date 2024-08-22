@@ -51,7 +51,7 @@ unsigned char get_register(unsigned char registerNumber) {
 void qn8066_begin(void) {
     
     
-  i2c_initialize(100, _XTAL_FREQ);
+  i2c_initialize();
     
   reg_system1.raw = 0B11100011;
   reg_system2.raw = 0;

@@ -14,53 +14,74 @@
 //PIN 14 -> RC3 -> SCL
 //PIN 15 -> RC4 ->SDA
 
-void i2c_initialize(const unsigned long clock, const unsigned long XTAL_FREQ ) //Begin IIC as master
+void i2c_initialize() //Begin IIC as master
 {
-  TRISC3 = 1;  
-  TRISC4 = 1;  //Set SDA and SCL pins as input pins
-  
-  SSPCON  = 0b00101000;    //pg84/234 
-  SSPCON2 = 0b00000000;    //pg85/234
-  
-  SSPADD = 9; // (XTAL_FREQ/(4*clock*100))-1; //Setting Clock Speed pg99/234
-  SSPSTAT = 0b00000000;    //pg83/234
+	TRISC3 = 1;      /* SDA and SCL as input pin */
+	TRISC4 = 1;      /* these pins can be configured either i/p or o/p */
+	SSPSTAT |= 0x80; /* Slew rate disabled */
+	SSPCON = 0x28;   /* SSPEN = 1, I2C Master mode, clock = FOSC/(4 * (SSPADD + 1)) */
+	SSPADD = 0x28;    /* 100Khz @ 4Mhz Fosc */  
 }
 
 void i2c_hold()
 {
-    while (   (SSPCON2 & 0b00011111)    ||    (SSPSTAT & 0b00000100)   ) ; //check the bis on registers to make sure the IIC is not in progress
-}
+    while(SEN); 
+}     
 
 void i2c_begin()
 {
-  i2c_hold();  //Hold the program is I2C is busy  
-  SEN = 1;     
+	SEN = 1;         /* Start condition enabled */
+	while(SEN);
 }
 
 void i2c_end()
 {
-  i2c_hold(); //Hold the program is I2C is busy  
-  PEN = 1;    //End IIC pg85/234
+	PEN = 1;         /* Stop condition enabled */
+    while(PEN);
+}
+
+void i2c_restart()
+{
+	RSEN = 1;        // Repeated start enabled 
+    while(RSEN);
+}
+
+
+void i2c_ack()
+{
+	ACKDT = 0;       /* Acknowledge data bit, 0 = ACK */
+	ACKEN = 1;       /* Ack data enabled */
+	while(ACKEN);    /* wait for ack data to send on bus */
+}
+
+void i2c_nak()
+{
+	ACKDT = 1;       /* Acknowledge data bit, 1 = NAK */
+	ACKEN = 1;       /* Ack data enabled */
+	while(ACKEN);    /* wait for ack data to send on bus */
+}
+
+
+void i2c_wait()
+{
+	while ( (SSPCON2 & 0b00011111)    ||    (SSPSTAT & 0b00000100)  );
 }
 
 void i2c_write(unsigned char data)
 {
-  i2c_hold();           //Hold the program is I2C is busy 
-  SSPBUF = data;        
+	SSPBUF = data;    /* Move data to SSPBUF */
+	while(BF);       /* wait till complete data is sent from buffer */
+	i2c_wait();       /* wait for any pending transfer */     
 }
+
 
 unsigned char i2c_read(unsigned char ack)
 {
-  unsigned char incoming;
-  i2c_hold();
-  RCEN = 1;
-  
-  i2c_hold();
-  incoming = SSPBUF;      //get the data saved in SSPBUF
-  
-  i2c_hold();
-  ACKDT = (ack)?0:1;    //check if ack bit received  
-  ACKEN = 1;          //pg 85/234
-  
-  return incoming;
+	unsigned char temp;
+    /* Reception works if transfer is initiated in read mode */
+	RCEN = 1;        /* Enable data reception */
+	while(!BF);      /* wait for buffer full */
+	temp = SSPBUF;   /* Read serial buffer and store in temp register */
+	i2c_wait();      /* wait to check any pending transfer */
+	return temp;     /* Return the read data from bus */
 }
