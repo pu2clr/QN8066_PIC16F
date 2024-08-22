@@ -1,17 +1,5 @@
 
-dist/default/production/QN8066_PIC16F.production.cmf
-dist/default/production/QN8066_PIC16F.production.cmf
-dist/default/production/QN8066_PIC16F.production.elf
-dist/default/production/QN8066_PIC16F.production.hex
-dist/default/production/QN8066_PIC16F.production.hxl
-dist/default/production/QN8066_PIC16F.production.lst
-dist/default/production/QN8066_PIC16F.production.map
-dist/default/production/QN8066_PIC16F.production.mum
-dist/default/production/QN8066_PIC16F.production.o
-dist/default/production/QN8066_PIC16F.production.rlf
-dist/default/production/QN8066_PIC16F.production.sdb
-dist/default/production/QN8066_PIC16F.production.sym
-build/default/production/main.i
-build/default/production/main.p1
-build/default/production/qn8066.i
-build/default/production/qn8066.p1
+dist/
+build/
+
+
