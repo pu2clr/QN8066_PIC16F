@@ -15,7 +15,7 @@
 #define _QN8066_H
 
 #ifndef _XTAL_FREQ
-#define _XTAL_FREQ 4000000  // Defina a frequência do oscilador
+#define _XTAL_FREQ 4000000  // Defina a frequï¿½ncia do oscilador
 #endif
 
 #define QN8066_I2C_ADDRESS 0x21   // See Datasheet pag. 16.
@@ -30,7 +30,7 @@
 #define REG_SYSTEM2 0x01   //<! Sets external clock type and CCA parameters.
 #define REG_CCA 0x02       //<! Sets CCA parameters.
 #define REG_SNR 0x03       //<! Estimate RF input CNR value
-#define REG_RSSISIG 0x04   //<! In-band signal RSSI dBµ V value.
+#define REG_RSSISIG 0x04   //<! In-band signal RSSI dBï¿½ V value.
 #define REG_CID1 0x05      //<! Device ID numbers.
 #define REG_CID2 0x06      //<! Device ID numbers.
 #define REG_XTAL_DIV0 0x07 //<! Frequency select of reference clock source.
@@ -839,7 +839,7 @@ unsigned char rdsTP = 0;        //!< Traffic Program (TP)
 unsigned char rdsSendError = 0;
 
 
-void i2c_begin(int c, long pic_xtal);
+void i2c_begin(void);
 void i2c_start();
 void i2c_stop();
 void i2c_write(unsigned char data);

@@ -4,7 +4,6 @@ build/
 _buid_mplab/
 .generated-cmakefiles/
 
-
-
-
-
+nbproject/Makefile-default.mk
+nbproject/Makefile-genesis.properties
+nbproject/Makefile-local-default.mk

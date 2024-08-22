@@ -30,7 +30,7 @@
 
 void main(void) {
     
-    i2c_begin(1000, _XTAL_FREQ );
+    i2c_begin();
     
     qn8066_begin();
     __delay_ms(100);
