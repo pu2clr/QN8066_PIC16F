@@ -29,9 +29,7 @@
 #pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
 
 void main(void) {
-    
-    i2c_begin();
-    
+       
     qn8066_begin();
     __delay_ms(100);
     qn8066_set_tx(1069);

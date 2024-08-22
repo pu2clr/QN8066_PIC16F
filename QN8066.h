@@ -839,12 +839,6 @@ unsigned char rdsTP = 0;        //!< Traffic Program (TP)
 unsigned char rdsSendError = 0;
 
 
-void i2c_begin(void);
-void i2c_start();
-void i2c_stop();
-void i2c_write(unsigned char data);
-unsigned char i2c_read(unsigned char);
-
 void set_register(unsigned char registerNumber, unsigned char value); 
 unsigned char get_register(unsigned char registerNumber);
 

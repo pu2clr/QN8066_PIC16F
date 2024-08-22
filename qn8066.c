@@ -8,95 +8,39 @@
 
 #include <xc.h>
 #include "QN8066.h"
+#include "i2c.h"
 
 /**
  * @defgroup g01 I2C BUS
  * @section g01 I2C
  * @detail I2C implementation
+ * @see: https://circuitdigest.com/microcontroller-projects/i2c-communication-with-pic-microcontroller-pic16f877a
  */
 
-
-/**
- * @ingroup g01
- * @brief i2c setup
- */
-void i2c_begin(void) {
-    SSPCON = 0b00101000;   // 
-    SSPCON2 = 0;
-    // SSPADD = (unsigned char) (pic_xtal/(4*c))-1;  // Configurar o clock do I2C (Fosc / (4 * BaudRate)) - 1
-    SSPSTAT = 0;
-    TRISC3 = 1;    // SCL 
-    TRISC4 = 1;    // SDA    
-}
-
-
-/**
- * @ingroup g01
- * @brief Sends a start condition
- */
-void i2c_start() {
-    SSPCON2bits.SEN = 1;             // Starts condition 
-    while(SSPCON2bits.SEN);          // while until start 
-}
-
-/**
- * @ingroup g01
- * @brief Sends a stop condition
- */
-void i2c_stop() {
-    SSPCON2bits.PEN = 1;             // Stop condition
-    while(SSPCON2bits.PEN);          // while until this condition is ok
-}
-
-/**
- * @ingroup g01
- * @brief sends a byte to slave device
- * @param data
- */
-void i2c_write(unsigned char data) {
-    SSPBUF = data;                  // Writes data to buffer
-    while(SSPSTATbits.BF);          // Waits for data transmission
-    while(SSPCON2bits.ACKSTAT);     // Checks ACK condition   
-} 
-
-/**
- * @ingroup g01
- * @brief Gets a byte from slave device
- * @param ack
- */
-unsigned char i2c_read(unsigned char ack) {
-    unsigned char aux;
-    SSPCON2bits.RCEN = 1;           // Enable reception
-    while(!SSPSTATbits.BF);         // Waits for data to be received
-    aux = SSPBUF;                   // Saves the data
-    SSPCON2bits.ACKDT = (ack)?0:1;  // Acknowledge bit
-    SSPCON2bits.ACKEN = 1;          // Initiates ACK condition
-    while(SSPCON2bits.ACKEN);       // Waits until it is completed
-    return aux;                     // Returns received data    
-}
 
 
 void set_register(unsigned char registerNumber, unsigned char value) {
-    i2c_start();                    // Sends Start
+    i2c_begin();
+    
     i2c_write(QN8066_I2C_ADDRESS);  // Sends device address
     i2c_write(registerNumber);      // Sends register
     i2c_write(value);               // Sends the data
-    i2c_stop();                     // Sends Stop    
+    
+    i2c_end();    
     __delay_ms(2);
 }
 
 
 unsigned char get_register(unsigned char registerNumber) {
     unsigned char value;
-    i2c_start();                        // Send Start
+    i2c_begin();                       
     i2c_write(QN8066_I2C_ADDRESS);      // Send device address with the write bit
     i2c_write(registerNumber);          // Send the register address we want to read 
         
-    i2c_start();                        // Send a new Start condition for reading
     i2c_write(QN8066_I2C_ADDRESS + 1);  // Send device address with the read bit
     value = i2c_read(1);                // Read a byte and send NACK after the read to indicate the read is completed
         
-    i2c_stop();                         // Send Stop    
+    i2c_end();                         // Send Stop    
     
     __delay_ms(2);
     
@@ -105,6 +49,10 @@ unsigned char get_register(unsigned char registerNumber) {
 
 
 void qn8066_begin(void) {
+    
+    
+  i2c_initialize(100, _XTAL_FREQ);
+    
   reg_system1.raw = 0B11100011;
   reg_system2.raw = 0;
   reg_cca.raw = get_register(REG_CCA);
