@@ -1,5 +1,9 @@
 
 dist/
 build/
+_buid_mplab/
+.generated-cmakefiles/
+
+
 
 
