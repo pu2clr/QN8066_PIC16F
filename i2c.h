@@ -17,8 +17,8 @@
 void i2c_initialize() //Begin IIC as master
 {
 	TRISC3=TRISC4=1;
-	SSPCON=0x28;					//SSP Module as Master
-	SSPADD=  9; //((4000000/4)/100000)-1;	
+	SSPCON=	0x28;		//SSP Module as Master
+	SSPADD= 0x28; 		// 100 kHz - See page 96 and 97 of PIC16F876A the Datasheet	
 }
   
 
