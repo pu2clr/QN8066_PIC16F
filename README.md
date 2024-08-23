@@ -59,3 +59,6 @@ The Logic signals level of the QN8066 device (CEN, SCL, SDA, to GND) works from 
 * [I2C Communication with PIC Microcontroller PIC16F877](https://circuitdigest.com/microcontroller-projects/i2c-communication-with-pic-microcontroller-pic16f877a)
 * [PIC16F877A I2C Tutorial](https://embetronicx.com/tutorials/microcontrollers/pic16f877a/pic16f877a-i2c-tutorial/)
 * [Github - example](https://github.com/Embetronicx/Tutorials/tree/master/Microcontrollers/PIC16F877A)
+* [How to implement I2C on PIC® and AVR® Microcontrollers ](https://youtu.be/lpwyGVEdt0Q?si=mJdLfcK6PrCUt9dE)
+* [I22CC™ MasterMaster ModeMode Overview and Use of the PICmicro® MSSP I2C Interface with a 24xx01x EEPROM Overview and Use of the PICmicro® MSSP I2C Interface with a 24xx01x EEPROM](https://ww1.microchip.com/downloads/en/DeviceDoc/i2c.pdf)
+
