@@ -63,3 +63,5 @@ The Logic signals level of the QN8066 device (CEN, SCL, SDA, to GND) works from 
 * [I22CC™ MasterMaster ModeMode Overview and Use of the PICmicro® MSSP I2C Interface with a 24xx01x EEPROM Overview and Use of the PICmicro® MSSP I2C Interface with a 24xx01x EEPROM](https://ww1.microchip.com/downloads/en/DeviceDoc/i2c.pdf)
 * [How to interface PIC Microcontroller with I2C sensors: Example code included](https://youtu.be/v_OibeUvBJw?si=sL2fGc3HmgbNaHwc)
 * [How to interface PIC Microcontroller with I2C sensors: Example code included](https://embeddedthere.com/how-to-interface-pic-microcontroller-with-i2c-sensors-example-code-included/)
+* [Creating a 7 MHz VFO with PIC16F883 and Si5351A Clock Generator Using I2C LCD Display](http://jh7ubc.web.fc2.com/pic/PIC16F883/PIC16F883_Si5351A_VFO.html)
+
