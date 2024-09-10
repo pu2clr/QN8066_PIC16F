@@ -53,6 +53,17 @@ The Logic signals level of the QN8066 device (CEN, SCL, SDA, to GND) works from 
 
 
 
+## CONTROLLER SCHEMATIC BASED ON PIC16F876A
+
+The following schematic presents a proposed controller for the QN8066 based on the PIC16F876. A 16x2 LCD is used for the visual interface, but the program can be easily adjusted to work with a 20x4 LCD. Optionally, you may include a clock based on the DS1302. This device will be useful for transmitting Date and Time services via FM RDS. Finally, a rotary encoder is used to navigate through a menu of options to configure the transmitter.
+
+![CONTROLLER SCHEMATIC BASED ON PIC16F876A](./extra/images/schematic_pic16f876A_lcd_16_2.png)
+
+
+Still regarding the previously presented schematic, observe the interface used for connecting to the QN8066 module, which could either be the DIY KIT previously mentioned or another module. Note that there is a PWM output to control the FM transmitter power, as suggested by the DIY KIT. However, the PWM interface can be removed if you choose another type of power control.
+
+
+
 ## References
 
 * [PIC16F87XA Data Sheet - 28/40/44-Pin Enhanced Flash Microcontrollers](https://ww1.microchip.com/downloads/en/devicedoc/39582b.pdf)
