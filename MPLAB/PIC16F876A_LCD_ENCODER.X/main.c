@@ -10,7 +10,7 @@
 
 
 #include <xc.h>
-#include "QN8066.h"
+// #include "QN8066.h"
 
 
 #include <xc.h>
@@ -19,16 +19,13 @@
 #define _XTAL_FREQ 4000000  // defines the oscillator (defined in QN8066.h)
 
 // PIC16F876A Configuration Bit Settings 
-#pragma config FOSC = XT        // Oscillator Selection bits (XT oscillator)
-#pragma config WDTE = OFF       // Watchdog Timer Enable bit (WDT disabled)
-#pragma config PWRTE = OFF      // Power-up Timer Enable bit (PWRT disabled)
-#pragma config BOREN = ON       // Brown-out Reset Enable bit (BOR enabled)
-#pragma config LVP = OFF        // Low-Voltage (Single-Supply) In-Circuit Serial Programming Enable bit (RB3 is digital I/O, HV on MCLR must be used for programming)
-#pragma config CPD = OFF        // Data EEPROM Memory Code Protection bit (Data EEPROM code protection off)
-#pragma config WRT = OFF        // Flash Program Memory Write Enable bits (Write protection off; all program memory may be written to by EECON control)
-#pragma config CP = OFF         // Flash Program Memory Code Protection bit (Code protection off)
-
-
+#pragma config FOSC = HS      // 
+#pragma config WDTE = OFF       // Watchdog Timer disabled 
+#pragma config PWRTE = OFF      // Power-up Timer disabled
+#pragma config BOREN = OFF      // Brown-out Reset disabled
+#pragma config LVP = OFF        // Low Voltage Programming disabled
+#pragma config CPD = OFF        // Data EEPROM Memory Code Protection disabled
+#pragma config CP = OFF         // Flash Program Memory Code Protection disabled
 
 // Definição dos pinos do LCD
 #define LCD_RS  RA0  // Pino RS do LCD
@@ -53,6 +50,8 @@ void lcd_pulse_enable(void);
 void lcd_send_nibble(unsigned char);
 
 
+
+
 // Função para enviar um comando ao LCD
 void lcd_command(unsigned char cmd) {
     LCD_RS = 0;  // RS = 0 para comando
@@ -71,17 +70,14 @@ void lcd_data(unsigned char data) {
 
 // Função para inicializar o LCD
 void lcd_init(void) {
-    __delay_ms(20);  // Aguardar o LCD estabilizar após ser energizado
+    __delay_ms(15);  // Aguardar o LCD estabilizar após ser energizado
     
     lcd_command(0x03);  // Inicialização em modo de 8 bits
     __delay_ms(5);
     lcd_command(0x03);
-    __delay_us(200);
+    __delay_us(100);
     lcd_command(0x03);
-    __delay_ms(5);
-    
-    lcd_command(0x02);  // Configurar o modo de 4 bits
-    
+    lcd_command(0x02);  // Configurar o modo de 4 bitsx`
     // Configurar o LCD para 2 linhas e caracteres de 5x8
     lcd_command(0x28);
     lcd_command(0x0C);  // Display ligado, cursor desligado
@@ -142,12 +138,18 @@ void main(void) {
     
     lcd_init();    // Inicializa o LCD
     
-    lcd_set_cursor(0,0);
-    lcd_write_string("QN8066");  // Escreve mensagem no LCD
-        
+
    
     while (1) {
-        __delay_ms(5);
+        
+    lcd_clear();
+    __delay_ms(1000);
+    lcd_set_cursor(0,0);
+    lcd_write_string("QN8066 WITH");  // Escreve mensagem no LCD
+    lcd_set_cursor(0,1);
+    lcd_write_string("PIC16F876A"); 
+    __delay_ms(1000);
+
     }
     
     return;
