@@ -3,9 +3,13 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>QN8066_FM_TRANSMITTER</name>
-            <creation-uuid>057d51a8-437c-493f-835e-103617e4a2bc</creation-uuid>
+            <name>PIC16F876A_LCD_ENCODER</name>
+            <creation-uuid>e3d3a4cc-ec2f-41b3-9537-cfe82725d392</creation-uuid>
             <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
