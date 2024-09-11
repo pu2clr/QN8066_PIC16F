@@ -3,8 +3,8 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>PIC16F876A_LCD_ENCODER</name>
-            <creation-uuid>e3d3a4cc-ec2f-41b3-9537-cfe82725d392</creation-uuid>
+            <name>TST_LCD</name>
+            <creation-uuid>a5d00163-9d22-40c7-bfc0-58cae8b6f84f</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
             <cpp-extensions/>
@@ -12,9 +12,7 @@
             <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList>
-                <sourceRootElem>../PIC16F876A_LCD/TST_LCD.X</sourceRootElem>
-            </sourceRootList>
+            <sourceRootList/>
             <confList>
                 <confElem>
                     <name>default</name>

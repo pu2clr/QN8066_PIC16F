@@ -18,7 +18,8 @@ void i2c_initialize() //Begin IIC as master
 {
 	TRISC3=TRISC4=1;
 	SSPCON=	0x28;		//SSP Module as Master
-	SSPADD= 0x28; 		// 100 kHz - See page 96 and 97 of PIC16F876A the Datasheet	
+    SSPSTATbits.SMP = 1;
+	SSPADD = 19;		// 100 kHz - See page 96 and 97 of PIC16F876A the Datasheet	
 }
   
 
@@ -30,8 +31,10 @@ void i2c_begin()
 
 void i2c_end()
 {
-	PEN = 1;         /* Stop condition enabled */
+    SSPIF = 0;
+    PEN = 1;
     while(PEN);
+    SSPIF = 0;
 }
 
 void i2c_restart()
@@ -63,9 +66,9 @@ void i2c_wait()
 
 void i2c_write(unsigned char data)
 {
-	SSPBUF = data;    /* Move data to SSPBUF */
-	while(BF);       /* wait till complete data is sent from buffer */
-	i2c_wait();       /* wait for any pending transfer */     
+    SSPIF = 0;
+    SSPBUF = data;
+    while(!SSPIF);  
 }
 
 

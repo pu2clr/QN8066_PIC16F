@@ -1,20 +1,18 @@
 #include <xc.h>
 #include "pic16flcd.h"
-#include "QN8066.h"
 
 
 #pragma config FOSC = HS      // 
-#pragma config WDTE = OFF
-#pragma config PWRTE = ON
-#pragma config CP = OFF
-#pragma config CPD = OFF
-#pragma config BOREN = OFF
-#pragma config LVP = OFF
+#pragma config WDTE = OFF       // Watchdog Timer disabled 
+#pragma config PWRTE = OFF      // Power-up Timer disabled
+#pragma config BOREN = OFF      // Brown-out Reset disabled
+#pragma config LVP = OFF        // Low Voltage Programming disabled
+#pragma config CPD = OFF        // Data EEPROM Memory Code Protection disabled
+#pragma config CP = OFF         // Flash Program Memory Code Protection disabled
 
-#pragma config WRT = OFF
 
 #ifndef _XTAL_FREQ
-#define _XTAL_FREQ 4000000      // internal clock
+#define _XTAL_FREQ 8000000      // internal clock
 #endif
 
 
@@ -49,7 +47,7 @@ unsigned char sad[8] = {
 void main() {
     char i;
 
-    TRISC = 0;
+
 
     // Define the LCD pin configuration for PIC16F887
     TRISB = 0; // You need to set this register to output
@@ -83,10 +81,6 @@ void main() {
     Lcd_WriteCustomChar(&lcd, 0);
     __delay_ms(5000);
 
-    
-    qn8066_begin();
-    qn8066_set_tx(1069);
-    
     while (1) {
         __delay_ms(1);
     }
