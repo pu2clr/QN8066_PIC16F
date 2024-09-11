@@ -31,14 +31,14 @@
 
 
 // Definição dos pinos do LCD
-#define LCD_RS  RA1  // Pino RS do LCD
-#define LCD_E   RA0  // Pino Enable (E) do LCD
+#define LCD_RS  RA0  // Pino RS do LCD
+#define LCD_E   RA1  // Pino Enable (E) do LCD
 
 // Definição dos pinos de dados do LCD
-#define LCD_DB4 RB0  // Pino DB4 do LCD
-#define LCD_DB5 RB1  // Pino DB5 do LCD
-#define LCD_DB6 RB2  // Pino DB6 do LCD
-#define LCD_DB7 RB3  // Pino DB7 do LCD
+#define LCD_DB4 RB3  // Pino DB4 do LCD
+#define LCD_DB5 RB2  // Pino DB5 do LCD
+#define LCD_DB6 RB1  // Pino DB6 do LCD
+#define LCD_DB7 RB0  // Pino DB7 do LCD
 
 
 // Funções de controle do LCD
@@ -46,7 +46,7 @@ void lcd_command(unsigned char);
 void lcd_data(unsigned char);
 void lcd_init(void);
 void lcd_clear(void);
-void lcd_goto(unsigned char, unsigned char);
+void lcd_set_cursor(unsigned char, unsigned char);
 void lcd_write_string(const char *);
 
 void lcd_pulse_enable(void);
@@ -96,7 +96,7 @@ void lcd_clear(void) {
 }
 
 // Função para mover o cursor para uma posição específica
-void lcd_goto(unsigned char row, unsigned char col) {
+void lcd_set_cursor(unsigned char row, unsigned char col) {
     unsigned char pos;
     
     if (row == 0)
@@ -142,15 +142,10 @@ void main(void) {
     
     lcd_init();    // Inicializa o LCD
     
-    lcd_goto(0,0);
+    lcd_set_cursor(0,0);
     lcd_write_string("QN8066");  // Escreve mensagem no LCD
         
-    
-    
-    qn8066_begin();
-    __delay_ms(100);
-    qn8066_set_tx(1069);
-    
+   
     while (1) {
         __delay_ms(5);
     }
