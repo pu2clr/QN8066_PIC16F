@@ -41,38 +41,13 @@
             "type": "translator",
             "provider": "microchip.toolchains:xc8-HI-TECH-COMP@2.46",
             "properties": {
-                "additional-warnings": true,
-                "asmlist": true,
-                "call-prologues": false,
-                "default-bitfield-type": true,
-                "default-char-type": true,
-                "define-macros": "",
-                "disable-optimizations": true,
-                "extra-include-directories": "",
-                "favor-optimization-for": "-speed,+space",
-                "garbage-collect-data": true,
-                "garbage-collect-functions": true,
-                "identifier-length": "255",
-                "local-generation": false,
-                "operation-mode": "free",
-                "opt-xc8-compiler-strict_ansi": false,
-                "optimization-assembler": true,
-                "optimization-assembler-files": true,
-                "optimization-debug": false,
-                "optimization-invariant-enable": false,
-                "optimization-invariant-value": "16",
-                "optimization-level": "-O0",
-                "optimization-speed": false,
-                "optimization-stable-enable": false,
-                "preprocess-assembler": true,
-                "short-enums": true,
-                "tentative-definitions": "-fno-common",
-                "undefine-macros": "",
-                "use-cci": false,
-                "use-iar": false,
-                "verbose": false,
+                "define-macros": [],
+                "undefine-macros": [],
+                "extra-include-directories": [],
                 "warning-level": "-2",
-                "what-to-do": "ignore"
+                "asmlist": true,
+                "optimization-assembler-files": true,
+                "tentative-definitions": "-fno-common"
             }
         },
         {
@@ -80,82 +55,25 @@
             "type": "translator",
             "provider": "microchip.toolchains:xc8-HI-TECH-LINK@2.46",
             "properties": {
-                "additional-options-checksum": "",
-                "additional-options-code-offset": "",
-                "additional-options-command-line": "",
-                "additional-options-errata": "",
-                "additional-options-extend-address": false,
-                "additional-options-trace-type": "",
-                "additional-options-use-response-files": false,
-                "backup-reset-condition-flags": false,
-                "calibrate-oscillator": false,
-                "calibrate-oscillator-value": "0x3400",
-                "clear-bss": true,
-                "code-model-external": "wordwrite",
-                "code-model-rom": "",
-                "create-html-files": false,
-                "data-model-ram": "",
-                "data-model-size-of-double": "32",
-                "data-model-size-of-double-gcc": "no-short-double",
-                "data-model-size-of-float": "32",
-                "data-model-size-of-float-gcc": "no-short-float",
-                "display-class-usage": false,
-                "display-hex-usage": false,
-                "display-overall-usage": true,
-                "display-psect-usage": false,
-                "extra-lib-directories": "",
-                "fill-flash-options-addr": "",
-                "fill-flash-options-const": "",
-                "fill-flash-options-how": "0",
-                "fill-flash-options-inc-const": "1",
-                "fill-flash-options-increment": "",
-                "fill-flash-options-seq": "",
-                "fill-flash-options-what": "0",
-                "format-hex-file-for-download": false,
-                "initialize-data": true,
-                "input-libraries": "libm",
-                "keep-generated-startup.as": false,
-                "link-in-c-library": true,
-                "link-in-c-library-gcc": "",
-                "link-in-peripheral-library": false,
-                "managed-stack": false,
-                "opt-xc8-linker-file": false,
-                "opt-xc8-linker-link_startup": false,
-                "opt-xc8-linker-serial": "",
-                "program-the-device-with-default-config-words": false,
-                "remove-unused-sections": true
+                "input-libraries": [
+                    "libm"
+                ],
+                "extra-lib-directories": [],
+                "opt-xc8-linker-serial": []
             }
         },
         {
             "name": "default-XC8-CO",
             "type": "translator",
             "provider": "microchip.toolchains:xc8-XC8-CO@2.46",
-            "properties": {
-                "coverage-enable": "",
-                "stack-guidance": false
-            }
+            "properties": {}
         },
         {
             "name": "default-XC8-config-global",
             "type": "translator",
             "provider": "microchip.toolchains:xc8-XC8-config-global@2.46",
             "properties": {
-                "advanced-elf": true,
-                "constdata-progmem": true,
-                "gcc-opt-driver-new": true,
-                "gcc-opt-std": "-std=c99",
-                "gcc-output-file-format": "dwarf-3",
-                "mapped-progmem": false,
-                "omit-pack-options": false,
-                "omit-pack-options-new": "1",
-                "output-file-format": "-mcof,+elf",
-                "smart-io-format": "",
-                "stack-size-high": "auto",
-                "stack-size-low": "auto",
-                "stack-size-main": "auto",
-                "stack-type": "compiled",
-                "user-pack-device-support": "",
-                "wpo-lto": false
+                "constdata-progmem": true
             }
         }
     ],
@@ -187,7 +105,8 @@
         {
             "name": "MPLAB X Virtual Filesystem",
             "files": [
-                "i2c.h"
+                "i2c.h",
+                "MPLAB/PIC16F876A_LCD_ENCODER.X/QN8066.h"
             ]
         }
     ]

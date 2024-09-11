@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/rcaratti/homebrew/Cellar/cmake/3.30.2/bin/cmake --regenerate-during-build -S/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/.generated-cmakefiles -B/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/_build_mplab/QN8066_FM_TRANSMITTER/default/image_default.elf
+  command = /Users/rcaratti/homebrew/Cellar/cmake/3.30.3/bin/cmake --regenerate-during-build -S/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/.generated-cmakefiles -B/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/_build_mplab/QN8066_FM_TRANSMITTER/default/image_default.elf
   description = Re-running CMake...
   generator = 1
 

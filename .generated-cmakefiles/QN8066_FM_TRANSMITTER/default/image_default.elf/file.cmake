@@ -1,6 +1,6 @@
 set(FILE_GROUP_assemble "")
 set(FILE_GROUP_assemblePreprocess "")
-set(FILE_GROUP_compile "")
+set(FILE_GROUP_compile "../../../../MPLAB/PIC16F876A_LCD_ENCODER.X/main.c")
 set(FILE_GROUP_link "")
 set(BUILD_LIBRARY 0)
 set(internal_image_name "/Users/rcaratti/Desenvolvimento/eu/Arduino/DSP/QN8066/QN8066_PIC16F/_build_mplab/QN8066_FM_TRANSMITTER/default/image_default.elf/default.elf")
